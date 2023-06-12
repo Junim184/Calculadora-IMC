@@ -1,0 +1,208 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+
+    color:white;
+    max-width: 1376px;
+
+    margin: 0 auto;  
+    padding: 0 auto;
+
+}
+
+#background {
+    background: url(https://www.sportsiteacademia.com.br/wp-content/uploads/2019/10/sportsite-showcase-01.jpg) center/cover;
+
+    height: 50%;
+    width: 100%;
+
+    height: 800px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1%;
+}
+
+/* -------------------------------------------------- */
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+span {
+    color: #42BD80;
+}
+
+span:hover {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+a {
+    color: #42BD80;
+}
+
+a:hover {
+    color: #42BD80;
+    transition: all 0.5s;
+}
+
+.network {
+    margin-bottom: 25%;
+
+    font-size: 20px;
+}
+
+/* -------------------------------------------------- */
+
+#text {
+    margin-top: 10%;
+
+    padding: 5%;
+}
+
+/* -------------------------------------------------- */
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#img img {
+    width: 45rem;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: white;
+    background-color: #262626;
+
+    border-radius: 8px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 2.25rem;
+    position: relative;
+}
+
+#title::after {
+    position: absolute;
+    content: '';
+    background-color: #42BD80;
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.input-box label {
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+#calculate {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #42BD80;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#bmi span:last-child {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+}
+
+#description {
+    width: 15.5rem;
+}
+
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #img {
+        display: none;
+    }
+
+    #calculator {
+        width: 100%;
+        height: 100%;
+    }
+}
